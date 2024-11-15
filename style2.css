@@ -1,0 +1,244 @@
+/* Style umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Kotak navigasi dengan background terpisah */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: transparent; /* Background lebih transparan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 1000;
+}
+
+
+/* Styling untuk logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 50px;
+    box-shadow: none;
+  }
+  
+  .logo-text {
+    margin-left: 5px;
+    margin-top: -2px;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    
+  }
+
+/* Styling untuk item menu navigasi */
+.data-list {
+    display: flex;
+    align-items: center;
+    padding-left:0;
+}
+
+.data-list li {
+    list-style: none;
+    margin-left: 10px;
+    position: relative; /* Untuk dropdown */
+}
+
+.data-list a {
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 25px; /* Mengurangi padding agar terlihat rapi */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.data-list a:hover {
+    color: #1c6af0;
+    transform: scale(1.1);
+}
+
+/* Gaya dropdown menu */
+.list {
+    display: none; /* Sembunyikan dropdown */
+    position: absolute; /* Menempatkan dropdown di bawah item menu */
+    top: 10px; /* Jarak dari menu utama */
+    left: 0;
+    background-color: transparent; /* Latar belakang dropdown */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk dropdown */
+    z-index: 1000;
+}
+
+.data-list li:hover .list {
+    display: block; /* Tampilkan dropdown saat hover */
+}
+
+.list li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.list li a {
+    color: black; /* Warna teks dropdown */
+    font-size: 15px;
+    text-decoration: none;
+    display: block; /* Membuat area klik lebih besar */
+}
+
+.list li a:hover {
+    color: #1c6af0; /* Warna teks saat hover submenu */
+}
+
+
+/* Kontainer utama */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Memusatkan konten */
+    padding: 20px;
+    background-color: #f9f9f9; /* Warna latar belakang */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan agar lebih menarik */
+}
+
+/* Heading (h3) */
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraf */
+p {
+    text-align: justify; /* Meratakan teks kiri-kanan */
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555; /* Warna teks */
+    margin-bottom: 15px;
+}
+
+/* Style gambar */
+img {
+    display: block;
+    margin: 0 auto 20px; /* Memusatkan gambar dan memberi margin bawah */
+    max-width: 100%; /* Gambar akan mengikuti lebar kontainer */
+    height: auto; /* Ukuran tinggi mengikuti proporsional gambar */
+    border-radius: 8px; /* Membuat gambar memiliki sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Lebar container lebih kecil pada layar mobile */
+    }
+    
+    h3 {
+        font-size: 20px; /* Ukuran heading lebih kecil */
+    }
+
+    p {
+        font-size: 14px; /* Ukuran teks lebih kecil pada layar kecil */
+    }
+}
+
+
+
+/* Style untuk deskripsi */
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+/* Style untuk galeri gambar */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.maps-container {
+    display: flex;
+    justify-content: flex-start; /* Memposisikan peta di sebelah kiri */
+    align-items: center; /* Memposisikan peta di tengah secara vertikal */
+    margin: 0 auto; /* Memberikan margin otomatis untuk sentralisasi */
+    padding: 20px 0; /* Jarak di atas dan bawah peta */
+    margin-left: 50%; /* Ubah persentase untuk memindahkan peta ke kanan */
+    max-width: 90%;
+}
+
+iframe {
+    width: 100%; /* Lebar penuh sesuai kontainer */
+    max-width: 1200px; /* Lebar maksimal iframe */
+    height: 350px; /* Tinggi iframe */
+    border: none; /* Menghilangkan border di sekitar iframe */
+}
+
+  
+
+/* Style untuk pemisah antar destinasi */
+hr {
+    border: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+/* Responsive layout untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

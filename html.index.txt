@@ -1,0 +1,454 @@
+html
+ rgb(255, 253, 253);
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+font-weight: 600;
+    font-size: 6rem;
+    width: 50%;
+    color: black;
+
+
+
+.bg-footer{
+    border: 1px solid rgb(255, 233, 233);
+    height: 20vh;
+    background-color: #222;
+    text-align: center;
+    color: azure;
+    padding-top: 20vh;
+}
+
+.bg-kontak {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bg-kontak h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.bg-kontak form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bg-kontak label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.bg-kontak input[type="text"],
+.bg-kontak input[type="email"],
+.bg-kontak textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bg-kontak input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bg-kontak input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+ <div id="kontak" class="bg-kontak">
+    <h2>Kontak Kami</h2>
+    <form action="#" method="post">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="name" placeholder="Nama Anda" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email Anda" required><br><br>
+        
+        <label for="message">Pesan:</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea><br><br>
+        
+        <input type="submit" value="Kirim">
+
+    </form>
+
+
+
+ <div class="bg-card-container">
+  <div id="Merlion" class="bg-card">
+      <div class="card-item">
+          <div class="gambar-card">
+              <img src="PATUNG MERLION.jpg" alt="Patung Merlion">
+          </div>
+          <div class="des-card">
+              <h2>PATUNG MERLION</h2>
+              <p>Patung Merlion, yang menggambarkan gabungan antara seekor singa dan ikan, adalah maskot resmi Singapura.</p>
+          </div>
+      </div>
+  </div>
+
+  <div id="Liberty" class="bg-card">
+      <div class="card-item">
+          <div class="gambar-card">
+              <img src="PATUNG LIBERTY AMERIKA.jpg" alt="Patung Liberty">
+          </div>
+          <div class="des-card">
+              <h2>PATUNG LIBERTY</h2>
+              <p>Patung Liberty merupakan simbol kebebasan Amerika Serikat yang terkenal di seluruh dunia.</p>
+          </div>
+      </div>
+  </div>
+
+  <div id="Eiffel" class="bg-card">
+      <div class="card-item">
+          <div class="gambar-card">
+              <img src="MENARA EIFFEL PARIS.jpg" alt="Menara Eiffel">
+          </div>
+          <div class="des-card">
+              <h2>MENARA EIFFEL</h2>
+              <p>Menara Eiffel adalah salah satu ikon Paris yang terkenal, dibangun oleh Gustave Eiffel pada tahun 1889.</p>
+          </div>
+      </div>
+  </div>
+
+  <div id="Ka'bah" class="bg-card">
+      <div class="card-item">
+          <div class="gambar-card">
+              <img src="KA'BAH.jpg" alt="Ka'bah">
+          </div>
+          <div class="des-card">
+              <h2>KA'BAH</h2>
+              <p>Ka'bah adalah bangunan suci umat Islam yang terletak di pusat Masjidil Haram, Mekkah.</p>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; /* Sesuaikan ukuran gambar */
+    height: 40px;
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+
+.logo h2 {
+    color: white; /* Warna teks */
+    margin: 0;
+}
+
+.nav {
+    color: aqua;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(1, 1, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.nav a{
+    color: aqua;
+}
+
+.nav a:hover{
+color: blue;
+}
+
+.data-list {
+    margin-left: 40%;
+}
+
+.data-list li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.wisata:hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+
+
+.logo {
+    margin-left: 30px;
+}
+
+.list {
+    display: none;
+    background-color: none;
+    position: absolute;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.list li {
+    display: block;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.data-list a {
+    text-decoration: none;
+}
+
+.wisata {
+    position: relative;
+}
+
+.wisata:hover .list {
+    display: block;
+}
+
+.list li:hover {
+    color: blue;
+}
+
+/* header====================*/
+
+.header{
+    display:flex;
+}
+
+.des-header {
+    width: 45%;
+    margin: auto;
+  }
+.des-header h1{
+    font-weight: 600;
+    font-size: 6rem;
+    width: 50%;
+    color: grey;
+}
+
+.gambar{
+    width: 40%;
+    height: 100vh;
+}
+
+.gambar img{
+    width: 100%;
+    height: 100%;
+}
+ 
+/*bg card=======*/
+.bg-card {
+    padding-bottom: 50vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-item {
+    margin: 10px;
+    width: 250px;
+    height: 350px;
+    border: none;
+    display: inline-block;
+  }
+
+  .gambar-card {
+    width: 100%;
+    height: 200px;
+    border: 1px solid orange;
+    overflow: hidden;
+  }
+  
+  .gambar-card img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+  }
+  
+  .des-card {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .des-card h2 {
+    margin-top: 0;
+    color: rgb(0, 85, 255);
+  }
+  
+  .des-card p{
+    line-height: 25px;
+  }
+
+  .card-item:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 2px 2px 2px rgb(0, 149, 255);
+  }
+
+  .card-hover img{
+    transform: scale(1.2);
+  }
+
+/* footer ===================*/
+
+.bg-footer{
+    border: 1px solid red;
+    height: 20vh;
+    background-color: #222;
+    text-align: center;
+    color: azure;
+    padding-top: 20vh;
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .container form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .container input[type="text"],
+  .container input[type="email"],
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .container input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+button[type="submit"] {
+    background-color: #0d0c0c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+button[type="submit"] {
+    background-color: #070606;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+button[type="submit"]:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  .html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+
+
+
+
+style22
+
+/* header====================*/
+
+.header{
+    display:flex;
+    justify-content: center;
+}
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+/* Grid Styles */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+

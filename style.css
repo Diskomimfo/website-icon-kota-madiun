@@ -1,0 +1,723 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+/* Container utama untuk navigasi dan background */
+.nav-container {
+  position: relative;
+  justify-content: space-between;
+  height: 500px; /* Pastikan tinggi cukup untuk menampilkan gambar */
+  background-image: url('foto\ kabah\ 1.jpeg'); /* Gambar background */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+
+/* Kotak navigasi dengan background terpisah */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Atur padding agar kotak terlihat lebih luas */
+  background-color: transparent; /* Background dengan warna putih transparan */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Border tipis agar terlihat lebih jelas */
+  border-radius: none; /* Sudut melengkung pada kotak */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan agar terlihat mengambang */
+  position: fixed; /* Tetap di atas saat scroll */
+  top: 0; /* Jarak dari atas */
+  left: 50%; /* Posisikan di tengah */
+  transform: translateX(-50%); /* Pusatkan navigasi secara horizontal */
+  z-index: 999; /* Tetap di atas semua elemen */
+  width: 100%; /* Lebar navigasi */
+  max-width: 100%; /* Maksimal lebar navigasi */
+}
+
+/* Styling untuk logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 60px;
+  height: 50px;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+/* Styling untuk item menu navigasi */
+.data-list {
+  display: flex;
+  align-items: center;
+}
+
+.data-list li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.data-list a {
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 15px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.data-list a:hover {
+  color: #1c6af0;
+  transform: scale(1.1);
+}
+
+/* Gaya pada gambar background agar tidak ikut scroll */
+body {
+  background-color: transparent; /* Background default halaman */
+}
+
+
+
+/* Sticky Navigation saat scroll */
+.data-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.data-list {
+  display: flex;
+  align-items: center;
+  position: relative; /* Dibutuhkan untuk dropdown */
+}
+
+.data-list li {
+  list-style: none;
+  margin-left: 10px; /* Jarak antar item menu */
+  padding-top: 10px;
+  position: relative; /* Dibutuhkan untuk dropdown */
+}
+
+/* Default untuk dropdown: disembunyikan */
+.data-list ul {
+  display: none; /* Sembunyikan submenu */
+  position: absolute;
+  top: 10px; /* Mengatur jarak dropdown dari menu utama */
+  left: 0;
+  background-color: transparent; /* Latar belakang dropdown */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk dropdown */
+  z-index: 1000;
+}
+
+/* Menampilkan dropdown saat hover */
+.data-list li:hover ul {
+  display: block; /* Tampilkan submenu saat hover */
+}
+
+/* Styling untuk item dropdown */
+.data-list ul li {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.data-list ul li a {
+  color: black; /* Warna teks dropdown */
+  font-size: 16px; /* Ukuran font submenu */
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block; /* Membuat area klik lebih besar */
+}
+
+.data-list ul li a:hover {
+  background-color: transparent; /* Warna latar saat hover submenu */
+  color: #1c6af0; /* Warna teks saat hover submenu */
+}
+
+/* header====================*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Pindahkan konten ke bawah */
+  height: 450px;
+  background-image: url(''); /* Gambar latar belakang di atas header */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Agar elemen lain bisa diposisikan relatif terhadap header */
+}
+
+/* Jika Anda ingin menambahkan overlay untuk teks header lebih jelas */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Overlay hitam transparan */
+  z-index: 1; /* Pastikan overlay di atas background */
+}
+
+/* Styling untuk teks header */
+.des-header {
+  width: 100%; /* Sesuaikan lebar untuk menempati seluruh area */
+  margin: 0;
+  text-align: center;
+  position: relative; /* Pastikan teks di atas overlay */
+  z-index: 2; /* Pastikan teks di atas overlay */
+  padding-bottom: 20px; /* Tambahkan padding bawah agar tidak terlalu rapat dengan bawah */
+}
+
+.des-header h1 {
+  font-weight: 0;
+  font-size: 30px;
+  color: white; /* Ubah warna teks untuk kontras yang lebih baik */
+  text-align: center;
+}
+.des-header h2 {
+  font-weight: 10;
+  font-size: 15px;
+  color: white; /* Ubah warna teks untuk kontras yang lebih baik */
+  text-align: center;
+}
+
+.des-header h3 {
+  font-weight: 10;
+  font-size: 15px;
+  color: white; /* Ubah warna teks untuk kontras yang lebih baik */
+  text-align: center;
+}
+
+
+
+/* Background card container */
+.bg-card {
+  padding-bottom: 50vh;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Set card item */
+.card-item {
+  margin: 30px 30px;
+  width: 45%; /* Ukuran card agar 2 sebaris */
+  border: none;
+  display: inline-block;
+  background-color: rgba(9, 9, 60, 0.315);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gambar memenuhi seluruh card */
+.gambar-card {
+  width: 100%;
+  height: 450px; /* Tinggi gambar */
+  overflow: hidden; /* Menghindari gambar terpotong */
+}
+
+.gambar-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Memastikan gambar memenuhi area tanpa distorsi */
+  object-position: center; /* Memusatkan gambar */
+}
+
+/* Deskripsi di atas gambar */
+.des-card {
+  position: absolute; /* Menggunakan posisi absolute untuk menempatkan teks di atas gambar */
+  bottom: 0; /* Memposisikan teks di bagian bawah gambar */
+  width: 100%; /* Lebar deskripsi sesuai dengan lebar card */
+  background-color: rgba(255, 255, 255, 0.7); /* Latar belakang transparan untuk teks */
+  padding: 10px; /* Padding untuk teks */
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.des-card h2 {
+  margin: 5px 0;
+  font-size: 1.5rem; /* Ukuran font yang bisa disesuaikan */
+  color: rgb(0, 103, 230);
+}
+
+.des-card p {
+  margin: 5px 0;
+  line-height: 1.6;
+  font-size: 0.9rem; /* Ukuran font bisa disesuaikan */
+  color: black;
+}
+
+/* Hover efek pada gambar */
+.card-item:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 2px 2px 15px rgba(75, 165, 221, 0.168);
+}
+
+.card-hover img {
+  transform: scale(1.1); /* Zoom in pada gambar saat di-hover */
+}
+
+
+
+
+/* Styling untuk modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;  
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding-top: 60px; 
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 0.5s;
+}
+
+
+/* Modal Content */
+.modal-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Sudut melengkung lebih besar */
+  max-width: 650px; /* Lebar maksimum */
+  width: 90%; /* Lebar responsif */
+  position: auto;
+  z-index: 1; /* Pastikan di atas overlay */
+  overflow-y: auto; /* Scroll jika konten terlalu besar */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk tampilan 3D */
+  animation: fadeIn 0.3s ease; /* Animasi fade-in */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  position: absolute; /* Change from relative to fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  height: auto;
+  max-height: 90vh; 
+  background-color:white;
+
+}
+
+.modal-content h2 {
+  background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+
+.modal-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000000;
+
+}
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px; /* Ukuran font lebih besar untuk tombol close */
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transisi warna untuk efek hover */
+}
+
+.close:hover {
+  color: #3182fa; /* Warna biru saat hover */
+}
+
+/* Modal Description */
+.modal-description p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align:justify; /* Menyelaraskan teks deskripsi ke kiri */
+  margin-top: 10px;
+  display: block;
+  text-indent: 1em;
+  color: #000000;
+  font-weight: normal;
+}
+
+
+
+/* Gallery Container */
+.gallery-container {
+  margin-top: 50px; /* Tambahkan jarak lebih dari teks galeri */
+  margin: 0 auto; 
+  max-width: 100%; 
+  overflow-x: auto; 
+  padding: 10px;
+  text-align: center; /* Center alignment for gallery text */
+  padding-left: 3 0px; /* Tambahkan padding kiri untuk menggeser galeri ke kanan */
+  overflow-y: hidden; /* Hilangkan scrollbar vertikal */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Jarak antara gambar */
+  margin-top: 30px; /* Tambahkan jarak lebih antara gambar dan teks */
+  overflow-y: hidden; /* Hilangkan scrollbar vertikal */
+}
+
+/* Styling for Gallery Images */
+.gallery-grid img {
+  width: 90%;
+  height: 300px; /* Tinggi gambar lebih panjang ke bawah */
+  object-fit: cover; /* Agar gambar menyesuaikan tanpa terpotong */
+  border-radius: 10px; /* Sudut gambar melengkung */
+  transition: transform 0.5s ease; /* Efek transisi saat zoom */
+  margin-left: 20px; /* Tambahkan margin kiri untuk menggeser gambar */
+}
+
+.gallery-container h3 {
+  font-size: 25px;
+  font-weight: none;
+  text-align: center;
+}
+
+/* Zoom Effect on Hover */
+.gallery-grid img:hover {
+  transform: scale(1.1); /* Zoom in saat di-hover */
+  cursor: pointer; /* Menampilkan kursor pointer */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan saat di-hover */
+}
+
+/* Animation for Gallery Images */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+/* Maps Container */
+.maps-container {
+  margin-top: 20px;
+  max-height: 300px; 
+  
+}
+
+.maps-container h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center; /* Menyelaraskan teks header ke tengah */
+}
+
+.maps-container iframe {
+  width: 97%;
+  height: 300px;
+  border: none;
+  border-radius: 8px; /* Sudut melengkung pada iframe */
+  z-index: 1;
+}
+
+/* Show modal when active */
+.modal-overlay.active {
+  display: flex; /* Flexbox untuk memusatkan modal */
+}
+
+/* Body scroll locking ketika modal terbuka */
+body.modal-active {
+  overflow: hidden;
+}
+
+/* Animasi fade-in untuk modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* gallery============*/
+
+/* Container utama galeri */
+.gallery {
+  display: block;
+  z-index: auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f8f8; /* Background lembut */
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  position: relative; /* Dibutuhkan untuk positioning teks */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; /* Efek zoom pada gambar */
+}
+
+/* Teks di dalam gambar bagian bawah */
+.gallery-caption {
+  position: absolute;
+  bottom: 0; /* Letakkan teks di bagian bawah */
+  left: 0;
+  width: 100%; /* Lebar teks mengikuti lebar gambar */
+  padding: 10px;
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+  background: rgba(0, 0, 0, 0.5); /* Background transparan hitam */
+  color: white; /* Warna teks */
+  font-size: 1rem; /* Ukuran font */
+  text-align: center; /* Teks di tengah */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Efek zoom pada gambar dan teks saat hover */
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom pada gambar saat dihover */
+}
+
+.gallery-item:hover .gallery-caption {
+  background: rgba(0, 0, 0, 0.8); /* Background lebih gelap saat hover */
+}
+
+
+/*==kontak form===========*/
+
+.kontak {
+  display: block;
+  z-index: 1;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.kontak h4 {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: none;
+  color: black;
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+.kontak h5 {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: none;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.kontak-kontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.kontak-info {
+  flex: 2rem;
+  background-color: #eee8e8;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kontak-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.kontak-item i {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.kontak-text {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.kontak-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.kontak-form {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.kontak-form h6 {
+  font-size: 22px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #444444;
+}
+
+
+
+/*SOSIAL MEDIA========*/
+
+/* Container untuk sosial media */
+.social-media {
+  position: fixed; /* Posisi tetap agar selalu mengikuti saat scroll */
+  top: 70px; /* Atur jarak dari atas agar berada tepat di bawah kotak navigasi */
+  right: 40px; /* Jarak dari sisi kanan, sesuaikan agar lebih ke kiri */
+  padding: 5px; /* Padding untuk kontainer */
+  z-index: 999; /* Pastikan berada di atas elemen lain */
+}
+
+/* Styling ul untuk sosial media */
+.social-media ul {
+  list-style-type: none; /* Hilangkan bullet */
+  margin: 0; /* Hilangkan margin */
+  padding: 0; /* Hilangkan padding */
+}
+
+/* Styling list item */
+.social-media li {
+  margin-bottom: 10px; /* Jarak antar ikon */
+}
+
+/* Styling untuk link */
+.social-media a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: black; /* Warna ikon */
+  font-size: 25px; /* Ukuran ikon */
+  display: flex; /* Mengatur ikon agar flex */
+  align-items: center; /* Pusatkan secara vertikal */
+  padding: 10px; /* Padding untuk kontainer ikon */
+  transition: color 0.3s ease; /* Efek transisi */
+}
+
+/* Efek hover pada ikon */
+.social-media a:hover {
+  color: #1c6af0; /* Warna ikon saat hover */
+}
+ 
+/*footer================*/
+
+
+.bg-footer {
+  background-color: rgb(0, 0, 0); /* Warna latar belakang footer */
+  padding: 50px; /* Padding footer */
+  text-align: left; /* Align text to the left */
+}
+
+.footer-container {
+  max-width: 1200px; /* Maksimal lebar footer */
+  margin: 0 auto; /* Centering footer */
+}
+
+.footer-info {
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Mengatur item agar tampil dalam kolom */
+  justify-content: flex-start; /* Meratakan item ke atas */
+}
+
+.footer-item {
+  display: flex; /* Flex untuk ikon dan teks */
+  align-items: center; /* Vertically center */
+  margin: 10px 0; /* Jarak antar item vertikal */
+}
+
+.footer-item i {
+  margin-right: 10px; /* Jarak antara ikon dan teks */
+  font-size: 20px; /* Ukuran ikon */
+  color: white; /* Warna ikon */
+}
+
+.footer-text p {
+  margin: 0; /* Hilangkan margin pada paragraf */
+  color: white; /* Warna teks */
+}
+
+.footer-copyright {
+  text-align: center; /* Center text copyright */
+  margin-top: 20px; /* Jarak antara informasi dan copyright */
+  color: white; /* Warna teks copyright */
+}
