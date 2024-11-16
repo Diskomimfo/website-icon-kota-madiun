@@ -105,12 +105,47 @@ body {
     color: #1c6af0;
 }
 
-/* Style untuk burger menu */
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+/* Gallery Container */
+.gallery {
+    margin-top: 50px; /* Tambahkan jarak lebih dari teks galeri */
+    margin: 0 auto; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    padding: 10px;
+    text-align: center; /* Center alignment for gallery text */
+    padding-left: 3 0px; /* Tambahkan padding kiri untuk menggeser galeri ke kanan */
+    overflow-y: hidden; /* Hilangkan scrollbar vertikal */
+  }
+  
+  /* Gallery Grid */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Jarak antara gambar */
+    margin-top: 30px; /* Tambahkan jarak lebih antara gambar dan teks */
+    overflow-y: hidden; /* Hilangkan scrollbar vertikal */
+  }
+  
+  /* Style untuk galeri gambar */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
 
 .burger-menu div {
     width: 25px;
@@ -132,41 +167,35 @@ body {
     margin-left: 0;
 }
 
-/* Responsif untuk perangkat mobile */
+
+/* Responsif - Hamburger Menu dan Menu Tampil di Mobile */
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
+    .burger-menu {
+        display: flex; /* Tampilkan hamburger menu pada layar kecil */
     }
 
     .data-list {
-        display: none; /* Sembunyikan menu di perangkat kecil */
+        display: none; /* Sembunyikan menu di layar kecil */
         flex-direction: column;
-        width: 100%;
         position: absolute;
         top: 55px;
-        left: 0;
-        background-color: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .burger-menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Menampilkan menu saat checkbox dicentang */
-    #menu-toggle:checked + .burger-menu + .data-list {
-        display: flex;
+    .menu-toggle:checked + .burger-menu + .data-list {
+        display: flex; /* Tampilkan menu saat checkbox dicentang */
     }
 
     .data-list li {
-        padding: 10px;
+        margin: 10px 0;
         text-align: center;
-        width: 100%;
     }
 
     .data-list a {
+        padding: 10px 0;
         font-size: 18px;
-        padding: 10px;
     }
 }
