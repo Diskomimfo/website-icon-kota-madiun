@@ -264,18 +264,34 @@ hr {
     }
 
     .nav {
-        flex-direction: column; /* Navigasi vertikal jika perlu */
-        height: auto; /* Biarkan tinggi menyesuaikan */
-        padding: 10px; /* Jarak lebih kecil */
+        flex-wrap: wrap; /* Membungkus elemen agar tidak terpotong */
+        justify-content: center; /* Pusatkan menu pada layar kecil */
+        height: auto; /* Biarkan tinggi menyesuaikan isi */
+        padding: 10px;
     }
 
     .data-list {
-        flex-direction: column; /* Menu navigasi secara vertikal */
-        gap: 5px; /* Jarak antar item menu */
-    }
-    .data-list a {
-        font-size: 14px; /* Ukuran teks lebih kecil */
-        padding: 10px 15px; /* Kurangi padding */
+        flex-wrap: wrap; /* Membungkus item navigasi agar rapi */
+        justify-content: center;
+        gap: 5px; /* Beri jarak antar item */
     }
 
+    .data-list li {
+        margin: 5px; /* Kurangi margin agar lebih rapat */
+    }
+
+    .data-list a {
+        font-size: 14px; /* Perkecil ukuran teks */
+        padding: 5px 15px; /* Sesuaikan padding untuk ukuran kecil */
+    }
 }
+
+/* Untuk layar yang lebih kecil dari 480px */
+@media (max-width: 480px) {
+    .data-list a {
+        font-size: 12px; /* Ukuran teks lebih kecil */
+        padding: 5px 10px; /* Kurangi padding lagi */
+    }
+}
+
+
