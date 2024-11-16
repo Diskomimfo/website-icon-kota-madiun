@@ -236,9 +236,46 @@ hr {
     .container {
         width: 95%;
     }
-
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        text-align: left;
+    }
     .gallery {
         flex-direction: column;
         gap: 10px;
     }
+    .gallery img {
+        width: 100%; /* Gambar menyesuaikan lebar layar */
+        height: auto; /* Biarkan tinggi proporsional */
+    }
+
+    .maps-container {
+        justify-content: center; /* Posisikan iframe di tengah */
+        margin: 0 auto; /* Pusatkan pada layar */
+        max-width: 100%; /* Sesuaikan dengan layar */
+    }
+
+    iframe {
+        width: 100%; /* Iframe lebar penuh sesuai kontainer */
+        height: 250px; /* Kurangi tinggi iframe */
+    }
+
+    .nav {
+        flex-direction: column; /* Navigasi vertikal jika perlu */
+        height: auto; /* Biarkan tinggi menyesuaikan */
+        padding: 10px; /* Jarak lebih kecil */
+    }
+
+    .data-list {
+        flex-direction: column; /* Menu navigasi secara vertikal */
+        gap: 5px; /* Jarak antar item menu */
+    }
+    .data-list a {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+        padding: 10px 15px; /* Kurangi padding */
+    }
+
 }
