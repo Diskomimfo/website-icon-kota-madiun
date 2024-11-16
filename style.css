@@ -203,7 +203,42 @@ body {
   text-align: center;
 }
 
+.image-container {
+  width: 100%;
+}
 
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  padding: 15px;
+}
+
+.details h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.details p {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.location-button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.location-button:hover {
+  background-color: #0056b3;
+}
 
 /* Background card container */
 .bg-card {
