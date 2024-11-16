@@ -7,14 +7,15 @@ body {
     color: #333;
 }
 
+
 /* Kotak navigasi dengan background terpisah */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
-    background-color: transparent;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Background lebih transparan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     position: fixed;
     top: 0;
     left: 0;
@@ -23,36 +24,41 @@ body {
     z-index: 1000;
 }
 
-/* Hamburger Menu */
-.menu-toggle {
-    display: none;
-}
 
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-}
+/* Styling untuk logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 50px;
+    box-shadow: none;
+  }
+  
+  .logo-text {
+    margin-left: 5px;
+    margin-top: -2px;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    
+  }
 
-.burger-menu div {
-    height: 3px;
-    background-color: #333;
-}
-
-/* Menu List */
+/* Styling untuk item menu navigasi */
 .data-list {
     display: flex;
     align-items: center;
-    padding-left: 0;
+    padding-left:0;
 }
 
 .data-list li {
     list-style: none;
     margin-left: 10px;
-    position: relative;
+    position: relative; /* Untuk dropdown */
 }
 
 .data-list a {
@@ -60,7 +66,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding: 5px 25px;
+    padding: 5px 25px; /* Mengurangi padding agar terlihat rapi */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -72,79 +78,109 @@ body {
 
 /* Gaya dropdown menu */
 .list {
-    display: none;
-    position: absolute;
-    top: 10px;
+    display: none; /* Sembunyikan dropdown */
+    position: absolute; /* Menempatkan dropdown di bawah item menu */
+    top: 10px; /* Jarak dari menu utama */
     left: 0;
-    background-color: transparent;
+    background-color: transparent; /* Latar belakang dropdown */
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk dropdown */
     z-index: 1000;
 }
 
 .data-list li:hover .list {
-    display: block;
+    display: block; /* Tampilkan dropdown saat hover */
 }
 
-/* Responsif - Hamburger Menu dan Menu Tampil di Mobile */
-@media (max-width: 768px) {
-    .burger-menu {
-        display: flex; /* Tampilkan hamburger menu pada layar kecil */
-    }
-
-    .data-list {
-        display: none; /* Sembunyikan menu di layar kecil */
-        flex-direction: column;
-        position: absolute;
-        top: 55px;
-        right: 0;
-        background-color: #fff;
-        width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-toggle:checked + .burger-menu + .data-list {
-        display: flex; /* Tampilkan menu saat checkbox dicentang */
-    }
-
-    .data-list li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .data-list a {
-        padding: 10px 0;
-        font-size: 18px;
-    }
+.list li {
+    margin: 0;
+    padding: 5px 10px;
 }
 
-/* Menyembunyikan hamburger menu pada layar lebih besar */
-@media (min-width: 769px) {
-    .burger-menu {
-        display: none; /* Sembunyikan ikon hamburger pada layar lebih besar */
-    }
+.list li a {
+    color: black; /* Warna teks dropdown */
+    font-size: 15px;
+    text-decoration: none;
+    display: block; /* Membuat area klik lebih besar */
 }
 
-/* Gaya gambar Patung Merlion */
+.list li a:hover {
+    color: #1c6af0; /* Warna teks saat hover submenu */
+}
+
+
+/* Kontainer utama */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Memusatkan konten */
+    padding: 20px;
+    background-color: #f9f9f9; /* Warna latar belakang */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan agar lebih menarik */
+}
+
+/* Heading (h3) */
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraf */
+p {
+    text-align: justify; /* Meratakan teks kiri-kanan */
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555; /* Warna teks */
+    margin-bottom: 15px;
+}
+
+/* Style gambar */
 img {
     display: block;
     margin: 0 auto 20px; /* Memusatkan gambar dan memberi margin bawah */
-    max-width: 70%; /* Membatasi ukuran gambar agar tidak terlalu besar */
-    height: auto;
-    border-radius: 8px; /* Sudut melengkung */
+    max-width: 100%; /* Gambar akan mengikuti lebar kontainer */
+    height: auto; /* Ukuran tinggi mengikuti proporsional gambar */
+    border-radius: 8px; /* Membuat gambar memiliki sudut melengkung */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
 }
 
-/* Menyelaraskan teks judul Patung Merlion, Galeri, Lokasi ke tengah */
-h3, h4 {
-    text-align: center; /* Menyelaraskan teks ke tengah */
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Lebar container lebih kecil pada layar mobile */
+    }
+    
+    h3 {
+        font-size: 20px; /* Ukuran heading lebih kecil */
+    }
+
+    p {
+        font-size: 14px; /* Ukuran teks lebih kecil pada layar kecil */
+    }
+}
+
+
+
+/* Style untuk deskripsi */
+h3 {
+    text-align: center;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 30px;
+}
+
+h4 {
+    text-align: center;
     margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 p {
-    text-align: center; /* Meratakan teks di paragraf */
+    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     margin: 15px 0;
@@ -173,19 +209,21 @@ p {
 .maps-container {
     display: flex;
     justify-content: flex-start; /* Memposisikan peta di sebelah kiri */
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px 0;
-    margin-left: 50%;
+    align-items: center; /* Memposisikan peta di tengah secara vertikal */
+    margin: 0 auto; /* Memberikan margin otomatis untuk sentralisasi */
+    padding: 20px 0; /* Jarak di atas dan bawah peta */
+    margin-left: 50%; /* Ubah persentase untuk memindahkan peta ke kanan */
     max-width: 90%;
 }
 
 iframe {
-    width: 100%;
-    max-width: 1200px;
-    height: 350px;
-    border: none;
+    width: 100%; /* Lebar penuh sesuai kontainer */
+    max-width: 1200px; /* Lebar maksimal iframe */
+    height: 350px; /* Tinggi iframe */
+    border: none; /* Menghilangkan border di sekitar iframe */
 }
+
+  
 
 /* Style untuk pemisah antar destinasi */
 hr {
