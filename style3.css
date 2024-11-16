@@ -147,22 +147,6 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
 }
 
-/* Responsif untuk perangkat mobile */
-@media (max-width: 768px) {
-    .container {
-        width: 95%; /* Lebar container lebih kecil pada layar mobile */
-    }
-    
-    h3 {
-        font-size: 20px; /* Ukuran heading lebih kecil */
-    }
-
-    p {
-        font-size: 14px; /* Ukuran teks lebih kecil pada layar kecil */
-    }
-}
-
-
 
 /* Style untuk deskripsi */
 h3 {
@@ -231,11 +215,37 @@ hr {
     margin: 40px 0;
 }
 
+.burger-menu {
+    display: none; /* Sembunyikan di layar besar */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: transform 0.3s;
+}
+
+
 /* Responsive layout untuk layar kecil */
 @media (max-width: 768px) {
     .container {
         width: 95%;
     }
+
+    /* Burger Menu */
+    .burger-menu {
+        display: flex; /* Tampilkan burger menu di layar kecil */
+    }
+
+    #menu-toggle:checked ~ .data-list {
+        display: flex; /* Tampilkan menu saat toggle aktif */
+    }
+
     h3{
         font-size: 20px;
     }
@@ -283,6 +293,20 @@ hr {
     .data-list a {
         font-size: 14px; /* Perkecil ukuran teks */
         padding: 5px 15px; /* Sesuaikan padding untuk ukuran kecil */
+    }
+
+    /* Kotak menu dropdown */
+    .dropdown-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #bceee4;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 15px;
+        width: 200px;
+        margin-top: 10px;
     }
 }
 
