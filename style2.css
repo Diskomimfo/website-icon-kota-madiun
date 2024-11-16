@@ -14,7 +14,7 @@ body {
     align-items: center;
     padding: 5px 10px;
     background-color: transparent;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -23,39 +23,36 @@ body {
     z-index: 1000;
 }
 
-/* Styling untuk logo */
-.logo {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
 }
 
-.logo-img {
-    width: 70px;
-    height: 60px;
-    box-shadow: none;
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
 }
 
-.logo-text {
-    margin-left: 5px;
-    margin-top: -2px;
-    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
+.burger-menu div {
+    height: 3px;
+    background-color: #333;
 }
 
-/* Styling untuk item menu navigasi */
+/* Menu List */
 .data-list {
     display: flex;
     align-items: center;
-    padding-left:0;
+    padding-left: 0;
 }
 
 .data-list li {
     list-style: none;
     margin-left: 10px;
-    position: relative; /* Untuk dropdown */
+    position: relative;
 }
 
 .data-list a {
@@ -75,98 +72,19 @@ body {
 
 /* Gaya dropdown menu */
 .list {
-    display: none; /* Sembunyikan dropdown */
-    position: absolute; 
+    display: none;
+    position: absolute;
     top: 10px;
     left: 0;
     background-color: transparent;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
 .data-list li:hover .list {
-    display: block; /* Tampilkan dropdown saat hover */
-}
-
-.list li {
-    margin: 0;
-    padding: 5px 10px;
-}
-
-.list li a {
-    color: black;
-    font-size: 15px;
-    text-decoration: none;
     display: block;
 }
-
-.list li a:hover {
-    color: #1c6af0;
-}
-
-/* Gallery Container */
-.gallery {
-    margin-top: 50px; /* Tambahkan jarak lebih dari teks galeri */
-    margin: 0 auto; 
-    max-width: 100%; 
-    overflow-x: auto; 
-    padding: 10px;
-    text-align: center; /* Center alignment for gallery text */
-    padding-left: 3 0px; /* Tambahkan padding kiri untuk menggeser galeri ke kanan */
-    overflow-y: hidden; /* Hilangkan scrollbar vertikal */
-  }
-  
-  /* Gallery Grid */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 20px; /* Jarak antara gambar */
-    margin-top: 30px; /* Tambahkan jarak lebih antara gambar dan teks */
-    overflow-y: hidden; /* Hilangkan scrollbar vertikal */
-  }
-  
-  /* Style untuk galeri gambar */
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.gallery img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-
-.burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-}
-
-/* Style dropdown menu di tampilan mobile */
-#menu-toggle:checked + .burger-menu + .data-list {
-    display: block;
-}
-
-.data-list {
-    display: flex;
-}
-
-.data-list li {
-    margin-left: 0;
-}
-
 
 /* Responsif - Hamburger Menu dan Menu Tampil di Mobile */
 @media (max-width: 768px) {
@@ -197,5 +115,92 @@ body {
     .data-list a {
         padding: 10px 0;
         font-size: 18px;
+    }
+}
+
+/* Menyembunyikan hamburger menu pada layar lebih besar */
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none; /* Sembunyikan ikon hamburger pada layar lebih besar */
+    }
+}
+
+/* Gaya gambar Patung Merlion */
+img {
+    display: block;
+    margin: 0 auto 20px; /* Memusatkan gambar dan memberi margin bawah */
+    max-width: 70%; /* Membatasi ukuran gambar agar tidak terlalu besar */
+    height: auto;
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
+}
+
+/* Menyelaraskan teks judul Patung Merlion, Galeri, Lokasi ke tengah */
+h3, h4 {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center; /* Meratakan teks di paragraf */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+/* Style untuk galeri gambar */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.maps-container {
+    display: flex;
+    justify-content: flex-start; /* Memposisikan peta di sebelah kiri */
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-left: 50%;
+    max-width: 90%;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 350px;
+    border: none;
+}
+
+/* Style untuk pemisah antar destinasi */
+hr {
+    border: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+/* Responsive layout untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 10px;
     }
 }
