@@ -228,7 +228,7 @@ hr {
     color: black; /* Mengatur warna teks menjadi hitam */
     font-size: 14px; /* Ukuran font, sesuaikan jika perlu */
     margin-bottom: 4px; /* Jarak antara teks dan garis */
-    display: block;
+    display:none;
  }
 
 .hamburger div {
@@ -257,7 +257,7 @@ hr {
         position:absolute ; /* Posisi absolut untuk dropdown */
         top :35px ; /* Jarak dari navigasi */
         left :10px ; 
-        right: 500px;
+        right: 30px;
         background-color:white; /* Warna latar belakang menu */
         width :700%; /* Lebar menu yang lebih kecil */
         z-index :1001 ; /* Pastikan di atas elemen lain */
