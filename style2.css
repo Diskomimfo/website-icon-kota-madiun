@@ -243,8 +243,9 @@ hr {
     color: black; /* Mengatur warna teks menjadi hitam */
     font-size: 14px; /* Ukuran font, sesuaikan jika perlu */
     margin-bottom: 4px; /* Jarak antara teks dan garis */
+    display: block;
  }
- 
+
 .hamburger div {
     width: 25px;
     height: 3px;
@@ -299,5 +300,11 @@ hr {
         display: flex; /* Tampilkan tombol hamburger di perangkat kecil */
         margin-left: 30px;
     }
+    .hamburger-text {
+        color: black; /* Mengatur warna teks menjadi hitam */
+        font-size: 14px; /* Ukuran font, sesuaikan jika perlu */
+        margin-bottom: 4px; /* Jarak antara teks dan garis */
+        display: block;
+     }
 
 }                                                                                                               
