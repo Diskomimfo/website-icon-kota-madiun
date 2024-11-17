@@ -259,34 +259,46 @@ hr {
         flex-direction: column;
         gap: 10px;
     }
-
-    .data-list {
-        display:none ; /* Sembunyikan daftar menu di perangkat kecil */
-        flex-direction :column ; /* Atur menu menjadi kolom */
-        position:absolute ; /* Posisi absolut untuk dropdown */
-        background-color: white;
-        top :55px ; /* Jarak dari navigasi */
-        left :0 ; 
-        background-color:#f4f4f4 ; /* Warna latar belakang menu */
-        width :800%; /* Lebar menu yang lebih kecil */
-        z-index :1001 ; /* Pastikan di atas elemen lain */
-        padding: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
-    }
-    
-    /* Garis pemisah di bawah setiap item menu */
-    .data-list li:not(:last-child) {
-    border-bottom: 1px solid #ddd; /* Garis pemisah */
-    }
- 
- 
-
-    .data-list.active {
-        display: flex; /* Tampilkan menu saat aktif */
-    }
-
     .hamburger {
-        display: flex; /* Tampilkan tombol hamburger di perangkat kecil */
+        display: flex; /* Tampilkan tombol hamburger */
+        flex-direction: column;
+        cursor: pointer;
+        margin-left: 10px; /* Posisi tombol lebih ke kiri */
+        margin-right: 0; /* Hilangkan margin kanan */
     }
 
-}           
+    /* Menu dropdown */
+    /* Isi menu dropdown */
+    .data-list li {
+        padding: 10px; /* Tambahkan ruang di sekitar item */
+        text-align: left; /* Rata kiri */
+        font-size: 16px; /* Ukuran font lebih standar */
+        font-weight: normal; /* Gaya teks biasa */
+        color: #333; /* Warna teks default */
+        background-color: transparent; /* Hilangkan warna latar khusus */
+        transition: background-color 0.3s ease; /* Transisi latar saat hover */
+    }
+
+        /* Hover untuk teks menu */
+    .data-list li:hover {
+        background-color: #f0f0f0; /* Warna latar saat hover */
+    }
+
+    /* Garis pemisah di bawah setiap item */
+    .data-list li:not(:last-child) {
+         border-bottom: 1px solid #ddd; /* Garis pemisah */
+    }
+
+        /* Teks link dalam dropdown */
+    .data-list a {
+         color: inherit; /* Warna mengikuti elemen induk */
+         text-decoration: none; /* Hilangkan garis bawah */
+        display: block; /* Buat area klik lebih besar */
+    }
+
+    /* Hover untuk link dalam dropdown */
+    .data-list a:hover {
+        color: #1c6af0; /* Warna teks sedikit lebih gelap saat hover */
+    }
+
+}
