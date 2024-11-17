@@ -236,14 +236,18 @@ hr {
     display: none; /* Sembunyikan tombol hamburger secara default */
     flex-direction: column;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .hamburger div {
     width: 25px;
     height: 3px;
     background-color: black; /* Warna garis hamburger */
-    margin: 4px 0; /* Jarak antar garis */
-}
+    
+    margin :4px 0 ; /* Jarak antar garis */
+    transition: background-color 0.3s ease; /* Transisi warna */
+ }
+
 
 /* Responsive layout untuk layar kecil */
 @media (max-width: 768px) {
@@ -257,15 +261,15 @@ hr {
     }
 
     .data-list {
-        display: none; /* Sembunyikan daftar menu di perangkat kecil */
-        flex-direction: column; /* Atur menu menjadi kolom */
-        width: 100%; /* Lebar penuh */
-        position: absolute; /* Posisi absolut untuk dropdown */
-        top: 55px; /* Jarak dari navigasi */
-        left: 0;
-        background-color: #f4f4f4; /* Warna latar belakang menu */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan menu */
-        z-index: 1001; /* Pastikan di atas elemen lain */
+        display:none ; /* Sembunyikan daftar menu di perangkat kecil */
+        flex-direction :column ; /* Atur menu menjadi kolom */
+        position:absolute ; /* Posisi absolut untuk dropdown */
+        top :55px ; /* Jarak dari navigasi */
+        left :0 ; 
+        background-color:#f4f4f4 ; /* Warna latar belakang menu */
+        width :200px; /* Lebar menu yang lebih kecil */
+        z-index :1001 ; /* Pastikan di atas elemen lain */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
     }
 
     .data-list.active {
