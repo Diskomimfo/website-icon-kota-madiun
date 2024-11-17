@@ -51,7 +51,7 @@ body {
 
 /* Styling untuk item menu navigasi */
 .data-list {
-    display: none;
+    display: left;
     align-items: center;
     padding-left:0;
 }
@@ -103,7 +103,7 @@ body {
     color: black; /* Warna teks dropdown */
     font-size: 15px;
     text-decoration: none;
-    display: block; /* Membuat area klik lebih besar */
+    display: none; /* Membuat area klik lebih besar */
 }
 
 .list li a:hover {
