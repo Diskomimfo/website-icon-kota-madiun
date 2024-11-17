@@ -236,7 +236,7 @@ hr {
     display: none; /* Sembunyikan tombol hamburger secara default */
     flex-direction: column;
     cursor: pointer;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .hamburger div {
@@ -264,13 +264,22 @@ hr {
         display:none ; /* Sembunyikan daftar menu di perangkat kecil */
         flex-direction :column ; /* Atur menu menjadi kolom */
         position:absolute ; /* Posisi absolut untuk dropdown */
+        background-color: white;
         top :55px ; /* Jarak dari navigasi */
         left :0 ; 
         background-color:#f4f4f4 ; /* Warna latar belakang menu */
-        width :200px; /* Lebar menu yang lebih kecil */
+        width :800%; /* Lebar menu yang lebih kecil */
         z-index :1001 ; /* Pastikan di atas elemen lain */
+        padding: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
     }
+    
+    /* Garis pemisah di bawah setiap item menu */
+    .data-list li:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Garis pemisah */
+    }
+ 
+ 
 
     .data-list.active {
         display: flex; /* Tampilkan menu saat aktif */
