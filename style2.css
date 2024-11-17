@@ -147,21 +147,6 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
 }
 
-/* Responsif untuk perangkat mobile */
-@media (max-width: 768px) {
-    .container {
-        width: 95%; /* Lebar container lebih kecil pada layar mobile */
-    }
-    
-    h3 {
-        font-size: 20px; /* Ukuran heading lebih kecil */
-    }
-
-    p {
-        font-size: 14px; /* Ukuran teks lebih kecil pada layar kecil */
-    }
-}
-
 
 
 /* Style untuk deskripsi */
@@ -255,11 +240,6 @@ hr {
     transition: 0.3s ease; /* Transisi warna */
  }
 
- /* Garis pemisah di bawah setiap item menu */
- .data-list li:not(:last-child) {
-    border-bottom: 1px solid black; /* Garis pemisah */
-    }
-
 /* Responsive layout untuk layar kecil */
 @media (max-width: 768px) {
     .container {
@@ -285,10 +265,6 @@ hr {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
     }
  
-
-    .data-list.active {
-        display: flex; /* Tampilkan menu saat aktif */
-    }
 
     .hamburger {
         display: flex; /* Tampilkan tombol hamburger di perangkat kecil */
