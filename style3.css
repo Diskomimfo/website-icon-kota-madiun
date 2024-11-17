@@ -103,7 +103,7 @@ body {
     color: black; /* Warna teks dropdown */
     font-size: 15px;
     text-decoration: none;
-    display: none; /* Membuat area klik lebih besar */
+    display: block; /* Membuat area klik lebih besar */
 }
 
 .list li a:hover {
