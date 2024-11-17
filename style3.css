@@ -30,6 +30,7 @@ body {
     display: flex;
     align-items: center;
     padding-top: 20px;
+    padding-left: 10px
   }
   
   .logo-img {
@@ -50,7 +51,7 @@ body {
 
 /* Styling untuk item menu navigasi */
 .data-list {
-    display: flex;
+    display: none;
     align-items: center;
     padding-left:0;
 }
@@ -64,11 +65,12 @@ body {
 .data-list a {
     color: rgb(0, 0, 0);
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     padding: 5px 25px; /* Mengurangi padding agar terlihat rapi */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
+    
 }
 
 .data-list a:hover {
