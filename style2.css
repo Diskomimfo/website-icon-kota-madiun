@@ -271,14 +271,14 @@ hr {
         gap: 10px;
     }
 
-    .data-list {
+    .data-list.active {
         display:none ; /* Sembunyikan daftar menu di perangkat kecil */
         flex-direction :column ; /* Atur menu menjadi kolom */
         position:absolute ; /* Posisi absolut untuk dropdown */
-        top :50px ; /* Jarak dari navigasi */
+        top :40px ; /* Jarak dari navigasi */
         left :10px ; 
-        right: 10px;
-        background-color:white ; /* Warna latar belakang menu */
+        right: 30px;
+        background-color:transparent; /* Warna latar belakang menu */
         width :700%; /* Lebar menu yang lebih kecil */
         z-index :1001 ; /* Pastikan di atas elemen lain */
         padding: 10px;
