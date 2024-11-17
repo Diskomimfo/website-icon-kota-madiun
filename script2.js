@@ -5,5 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Menambahkan event listener untuk menangani klik pada tombol hamburger
     hamburger.addEventListener('click', () => {
         dataList.classList.toggle('active'); // Toggle kelas active pada data-list
+        // Tambahkan animasi atau perubahan gaya jika ingin
+        hamburger.classList.toggle('is-active'); // Menambahkan kelas aktif pada hamburger jika diperlukan
     });
 });
