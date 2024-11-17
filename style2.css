@@ -253,18 +253,6 @@ hr {
         gap: 10px;
     }
 
-    .data-list {
-        display:none ; /* Sembunyikan daftar menu di perangkat kecil */
-        flex-direction :column ; /* Atur menu menjadi kolom */
-        position:absolute ; /* Posisi absolut untuk dropdown */
-        top :35px ; /* Jarak dari navigasi */
-        left :10px ; 
-        right: 30px;
-        background-color:white; /* Warna latar belakang menu */
-        width :700%; /* Lebar menu yang lebih kecil */
-        z-index :1001 ; /* Pastikan di atas elemen lain */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
-    }
         .data-list.active {
         display:flex; /* Tampilkan menu saat aktif */
     }
