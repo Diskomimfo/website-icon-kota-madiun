@@ -242,15 +242,15 @@ hr {
 .hamburger div {
     width: 25px;
     height: 3px;
+    color: black;
     background-color: black; /* Warna garis hamburger */
-    
     margin :4px 0 ; /* Jarak antar garis */
-    transition: background-color 0.3s ease; /* Transisi warna */
+    transition: 0.3s ease; /* Transisi warna */
  }
 
  /* Garis pemisah di bawah setiap item menu */
  .data-list li:not(:last-child) {
-    border-bottom: 1px solid #ddd; /* Garis pemisah */
+    border-bottom: 1px solid black; /* Garis pemisah */
     }
 
 /* Responsive layout untuk layar kecil */
@@ -268,10 +268,9 @@ hr {
         display:none ; /* Sembunyikan daftar menu di perangkat kecil */
         flex-direction :column ; /* Atur menu menjadi kolom */
         position:absolute ; /* Posisi absolut untuk dropdown */
-        background-color: white;
-        top :0 ; /* Jarak dari navigasi */
-        left :0 ; 
-        background-color:#f4f4f4 ; /* Warna latar belakang menu */
+        top :30px ; /* Jarak dari navigasi */
+        left :30px ; 
+        background-color:white ; /* Warna latar belakang menu */
         width :600%; /* Lebar menu yang lebih kecil */
         z-index :1001 ; /* Pastikan di atas elemen lain */
         padding: 10px;
@@ -280,7 +279,7 @@ hr {
     
    /* Garis pemisah di bawah setiap item menu */
     .data-list li:not(:last-child) {
-    border-bottom: 1px solid #ddd; /* Garis pemisah */
+    border-bottom: 1px solid black; /* Garis pemisah */
     }
  
  
