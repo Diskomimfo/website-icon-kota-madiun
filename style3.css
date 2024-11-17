@@ -30,7 +30,6 @@ body {
     display: flex;
     align-items: center;
     padding-top: 20px;
-    padding-left: 10px
   }
   
   .logo-img {
@@ -51,7 +50,7 @@ body {
 
 /* Styling untuk item menu navigasi */
 .data-list {
-    display: left;
+    display: flex;
     align-items: center;
     padding-left:0;
 }
@@ -65,12 +64,11 @@ body {
 .data-list a {
     color: rgb(0, 0, 0);
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     padding: 5px 25px; /* Mengurangi padding agar terlihat rapi */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
-    
 }
 
 .data-list a:hover {
@@ -149,6 +147,22 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
 }
 
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Lebar container lebih kecil pada layar mobile */
+    }
+    
+    h3 {
+        font-size: 20px; /* Ukuran heading lebih kecil */
+    }
+
+    p {
+        font-size: 14px; /* Ukuran teks lebih kecil pada layar kecil */
+    }
+}
+
+
 
 /* Style untuk deskripsi */
 h3 {
@@ -217,107 +231,14 @@ hr {
     margin: 40px 0;
 }
 
-.burger-menu {
-    display: none; /* Sembunyikan di layar besar */
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: transform 0.3s;
-}
-
-
 /* Responsive layout untuk layar kecil */
 @media (max-width: 768px) {
     .container {
         width: 95%;
     }
 
-    /* Burger Menu */
-    .burger-menu {
-        display: flex; /* Tampilkan burger menu di layar kecil */
-    }
-
-    #menu-toggle:checked ~ .data-list {
-        display: flex; /* Tampilkan menu saat toggle aktif */
-    }
-
-    h3{
-        font-size: 20px;
-    }
-    p{
-        font-size: 14px;
-        text-align: left;
-    }
     .gallery {
         flex-direction: column;
         gap: 10px;
     }
-    .gallery img {
-        width: 100%; /* Gambar menyesuaikan lebar layar */
-        height: auto; /* Biarkan tinggi proporsional */
-    }
-
-    .maps-container {
-        justify-content: center; /* Posisikan iframe di tengah */
-        margin: 0 auto; /* Pusatkan pada layar */
-        max-width: 100%; /* Sesuaikan dengan layar */
-    }
-
-    iframe {
-        width: 100%; /* Iframe lebar penuh sesuai kontainer */
-        height: 250px; /* Kurangi tinggi iframe */
-    }
-
-    .nav {
-        flex-wrap: wrap; /* Membungkus elemen agar tidak terpotong */
-        justify-content: center; /* Pusatkan menu pada layar kecil */
-        height: auto; /* Biarkan tinggi menyesuaikan isi */
-        padding: 10px;
-    }
-
-    .data-list {
-        flex-wrap: wrap; /* Membungkus item navigasi agar rapi */
-        justify-content: center;
-        gap: 5px; /* Beri jarak antar item */
-    }
-
-    .data-list li {
-        margin: 5px; /* Kurangi margin agar lebih rapat */
-    }
-
-    .data-list a {
-        font-size: 14px; /* Perkecil ukuran teks */
-        padding: 5px 15px; /* Sesuaikan padding untuk ukuran kecil */
-    }
-
-    /* Kotak menu dropdown */
-    .dropdown-box {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #bceee4;
-        border: 1px solid #ddd;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        padding: 15px;
-        width: 200px;
-        margin-top: 10px;
-    }
 }
-
-/* Untuk layar yang lebih kecil dari 480px */
-@media (max-width: 480px) {
-    .data-list a {
-        font-size: 12px; /* Ukuran teks lebih kecil */
-        padding: 5px 10px; /* Kurangi padding lagi */
-    }
-}
-
-
