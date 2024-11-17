@@ -261,7 +261,6 @@ hr {
         background-color:white; /* Warna latar belakang menu */
         width :700%; /* Lebar menu yang lebih kecil */
         z-index :1001 ; /* Pastikan di atas elemen lain */
-        padding: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
     }
  
@@ -274,7 +273,7 @@ hr {
         color: black; /* Mengatur warna teks menjadi hitam */
         font-size: 14px; /* Ukuran font, sesuaikan jika perlu */
         margin-bottom: 4px; /* Jarak antara teks dan garis */
-        display: block;
+        display: left;
      }
 
 }                                                                                                               
