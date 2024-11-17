@@ -239,6 +239,12 @@ hr {
     margin-right: 30px;
 }
 
+.hamburger-text {
+    color: black; /* Mengatur warna teks menjadi hitam */
+    font-size: 14px; /* Ukuran font, sesuaikan jika perlu */
+    margin-bottom: 4px; /* Jarak antara teks dan garis */
+ }
+ 
 .hamburger div {
     width: 25px;
     height: 3px;
@@ -268,10 +274,11 @@ hr {
         display:none ; /* Sembunyikan daftar menu di perangkat kecil */
         flex-direction :column ; /* Atur menu menjadi kolom */
         position:absolute ; /* Posisi absolut untuk dropdown */
-        top :30px ; /* Jarak dari navigasi */
-        left :30px ; 
+        top :50px ; /* Jarak dari navigasi */
+        left :10px ; 
+        right: 10px;
         background-color:white ; /* Warna latar belakang menu */
-        width :600%; /* Lebar menu yang lebih kecil */
+        width :700%; /* Lebar menu yang lebih kecil */
         z-index :1001 ; /* Pastikan di atas elemen lain */
         padding: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada menu */
