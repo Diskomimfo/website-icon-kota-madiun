@@ -210,14 +210,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-right:70px;
+  padding-left:70px;
   z-index: 1;
 }
 
 /* Set card item */
 .card-item {
   margin: 30px 30px;
-  width:calc( 50% -30px) ; /* Ukuran card agar 2 sebaris */
+  width:calc( 50% -25px) ; /* Ukuran card agar 2 sebaris */
   border: none;
   display: inline-block;
   background-color: rgba(9, 9, 60, 0.315);
@@ -764,7 +764,7 @@ button[type="submit"]:hover {
     margin: 10px auto;
   }
   .bg-card {
-    padding-left: 15%; /* Kurangi padding di layar kecil */
+    padding-left: 15px; /* Kurangi padding di layar kecil */
   }
 
   .modal-content {
