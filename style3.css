@@ -250,5 +250,10 @@ hr {
         font-size: 14px; /* Ukuran font lebih kecil */
         padding: 5px 15px; /* Kurangi padding internal */
     }
+    .data-list li {
+        margin: 0; /* Reset margin default */
+        padding: 5px 0; /* Tambahkan jarak vertikal */
+    }
+
 }
 
