@@ -241,4 +241,22 @@ hr {
         flex-direction: column;
         gap: 10px;
     }
+    .data-list {
+        flex-direction: column; /* Menu dalam kolom */
+        align-items: center; /* Rata kiri */
+        gap: 5px; /* Jarak antar item lebih kecil */
+        padding: 0; /* Hilangkan padding tambahan */
+    }
+
+    .data-list li {
+        margin: 0; /* Hilangkan margin antar item */
+        padding: 10px 0; /* Sesuaikan padding untuk jarak vertikal */
+        border-bottom: 1px solid #ddd; /* Garis pemisah */
+    }
+
+    .data-list a {
+        font-size: 14px; /* Ukuran font lebih kecil */
+        padding: 5px 15px; /* Kurangi padding internal */
+    }
 }
+
