@@ -207,7 +207,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  z-index: 999;
+  z-index: 997;
 }
 
 /* Set card item */
