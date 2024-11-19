@@ -207,7 +207,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: scapce-araund;
-  z-index: 997;
+  z-index: 1;
 }
 
 /* Set card item */
@@ -216,6 +216,7 @@ body {
   width:calc( 50% -30px) ; /* Ukuran card agar 2 sebaris */
   border: none;
   display: inline-block;
+  justify-content: space-between;
   background-color: rgba(9, 9, 60, 0.315);
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -273,7 +274,11 @@ body {
   transform: scale(1.1); /* Zoom in pada gambar saat di-hover */
 }
 
-
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 
 /* Styling untuk modal */
@@ -752,6 +757,7 @@ button[type="submit"]:hover {
     }
   .card-item {
     width: calc(100% - 20px); /* Card memenuhi layar di perangkat kecil */
+    padiing-right:20px;
     margin: 10px auto;
   }
 
