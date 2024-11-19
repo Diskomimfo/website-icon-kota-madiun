@@ -61,11 +61,12 @@
 .data-list {
   display: flex;
   align-items: center;
+  padding-left:0;
 }
 
 .data-list li {
   list-style: none;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .data-list a {
@@ -73,7 +74,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  padding: 15px 15px;
+  padding: 5px 20px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -97,15 +98,9 @@ body {
   position: relative;
 }
 
-.data-list {
-  display: flex;
-  align-items: center;
-  position: relative; /* Dibutuhkan untuk dropdown */
-}
-
 .data-list li {
   list-style: none;
-  margin-left: 10px; /* Jarak antar item menu */
+  margin-left: 5px; /* Jarak antar item menu */
   padding-top: 10px;
   position: relative; /* Dibutuhkan untuk dropdown */
 }
