@@ -648,9 +648,9 @@ button[type="submit"]:hover {
 .social-media {
   position: fixed; /* Posisi tetap agar selalu mengikuti saat scroll */
   top: 70px; /* Atur jarak dari atas agar berada tepat di bawah kotak navigasi */
-  right: 40px; /* Jarak dari sisi kanan, sesuaikan agar lebih ke kiri */
+  right: 60px; /* Jarak dari sisi kanan, sesuaikan agar lebih ke kiri */
   padding: 5px; /* Padding untuk kontainer */
-  z-index: 999; /* Pastikan berada di atas elemen lain */
+  z-index: 1000; /* Pastikan berada di atas elemen lain */
 }
 
 /* Styling ul untuk sosial media */
