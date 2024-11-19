@@ -244,17 +244,19 @@ hr {
     .data-list {
         gap: 20px; /* Jarak antar item lebih kecil */
         align-items: flex-start; /* Rata kiri */
-        padding-left: 20px;
+        
     }
 
     .data-list a {
         font-size: 14px; /* Ukuran font lebih kecil */
-        padding: 5px 8px; /* Kurangi padding internal */
+        padding: 5px 20px; /* Kurangi padding internal */
+        padding-left: 20px;
      
     }
     .data-list li {
         margin: 0; /* Reset margin default */
         padding: 5px 0; /* Tambahkan jarak vertikal */
+        margin-left: 5px;
     }
 
 }
