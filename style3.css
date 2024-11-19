@@ -242,7 +242,8 @@ hr {
         gap: 10px;
     }
     .data-list {
-        gap: 50px; /* Jarak antar item lebih kecil */
+        gap: 40px; /* Jarak antar item lebih kecil */
+        align-items: flex-start; /* Rata kiri */
         
     }
 
