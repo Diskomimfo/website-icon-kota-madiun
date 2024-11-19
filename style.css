@@ -210,13 +210,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-right:70px;
   z-index: 1;
 }
 
 /* Set card item */
 .card-item {
   margin: 30px 30px;
-  width:calc( 50% -40px) ; /* Ukuran card agar 2 sebaris */
+  width:calc( 50% -30px) ; /* Ukuran card agar 2 sebaris */
   border: none;
   display: inline-block;
   background-color: rgba(9, 9, 60, 0.315);
