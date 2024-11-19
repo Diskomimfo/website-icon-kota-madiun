@@ -96,6 +96,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  gap:5px;
 }
 
 .data-list li {
@@ -721,3 +722,34 @@ button[type="submit"]:hover {
   margin-top: 20px; /* Jarak antara informasi dan copyright */
   color: white; /* Warna teks copyright */
 }
+
+/* Responsive layout untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .data-list {
+        gap: 5px; /* Jarak antar item lebih kecil */
+        align-items: flex-start; /* Rata kiri */
+        
+    }
+
+    .data-list a {
+        font-size: 14px; /* Ukuran font lebih kecil */
+        padding: 5px 15px; /* Kurangi padding internal */
+        padding-left: 10px;
+     
+    }
+    .data-list li {
+        margin: 0; /* Reset margin default */
+        padding: 5px 0; /* Tambahkan jarak vertikal */
+        margin-left: 5px;
+    }
+
+}
+
