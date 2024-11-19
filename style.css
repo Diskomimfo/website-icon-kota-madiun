@@ -206,14 +206,14 @@ body {
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: scapce-araund;
   z-index: 997;
 }
 
 /* Set card item */
 .card-item {
   margin: 30px 30px;
-  width: 50%; /* Ukuran card agar 2 sebaris */
+  width:calc( 50% -30px) ; /* Ukuran card agar 2 sebaris */
   border: none;
   display: inline-block;
   background-color: rgba(9, 9, 60, 0.315);
@@ -750,6 +750,18 @@ button[type="submit"]:hover {
         padding: 5px 0; /* Tambahkan jarak vertikal */
         margin-left: 5px;
     }
+  .card-item {
+    width: calc(100% - 20px); /* Card memenuhi layar di perangkat kecil */
+    margin: 10px auto;
+  }
+
+  .modal-content {
+    width: 95%; /* Sesuaikan ukuran modal */
+  }
+
+  .gambar-card img {
+    height: auto; /* Agar gambar tidak terpotong */
+  }
 
 }
 
