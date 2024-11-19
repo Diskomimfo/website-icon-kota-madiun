@@ -199,6 +199,9 @@ body {
   text-align: center;
 }
 
+.section-before-card, .section-after-card {
+  margin: 40px 0;
+}
 
 /* Background card container */
 .bg-card {
