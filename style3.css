@@ -246,9 +246,6 @@ hr {
         
     }
 
-    .data-list li {
-        margin-bottom: 5px; /* Atur jarak bawah antar item */
-
     .data-list a {
         font-size: 14px; /* Ukuran font lebih kecil */
         padding: 5px 15px; /* Kurangi padding internal */
