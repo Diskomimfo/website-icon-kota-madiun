@@ -16,7 +16,7 @@
   background-size: cover; /* Agar gambar menutupi seluruh area */
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 999;
+  z-index: 1000;
 }
 
 /* Kotak navigasi dengan background terpisah */
@@ -216,7 +216,7 @@ body {
 /* Set card item */
 .card-item {
   margin: 30px 30px;
-  width: 45%; /* Ukuran card agar 2 sebaris */
+  width: 50%; /* Ukuran card agar 2 sebaris */
   border: none;
   display: inline-block;
   background-color: rgba(9, 9, 60, 0.315);
@@ -224,6 +224,8 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+   z-index: 999;
+  
 }
 
 /* Gambar memenuhi seluruh card */
@@ -489,6 +491,7 @@ body.modal-active {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   z-index: 999;
 }
 
 .gallery-item img {
