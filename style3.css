@@ -249,7 +249,7 @@ hr {
 
     .data-list a {
         font-size: 14px; /* Ukuran font lebih kecil */
-        padding: 5px 10px; /* Kurangi padding internal */
+        padding: 5px 8px; /* Kurangi padding internal */
      
     }
     .data-list li {
