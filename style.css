@@ -211,6 +211,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 999;
 }
 
 /* Set card item */
@@ -224,7 +225,7 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
-   z-index: 999;
+  
   
 }
 
@@ -469,6 +470,7 @@ body.modal-active {
   padding: 2rem;
   text-align: center;
   background-color: #f8f8f8; /* Background lembut */
+  z-index: 999;
 }
 
 .gallery h2 {
@@ -491,7 +493,7 @@ body.modal-active {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   z-index: 999;
+  
 }
 
 .gallery-item img {
@@ -647,8 +649,8 @@ button[type="submit"]:hover {
 /* Container untuk sosial media */
 .social-media {
   position: fixed; /* Posisi tetap agar selalu mengikuti saat scroll */
-  top: 70px; /* Atur jarak dari atas agar berada tepat di bawah kotak navigasi */
-  right: 60px; /* Jarak dari sisi kanan, sesuaikan agar lebih ke kiri */
+  top: 75px; /* Atur jarak dari atas agar berada tepat di bawah kotak navigasi */
+  right: 20px; /* Jarak dari sisi kanan, sesuaikan agar lebih ke kiri */
   padding: 5px; /* Padding untuk kontainer */
   z-index: 1000; /* Pastikan berada di atas elemen lain */
 }
