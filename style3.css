@@ -58,7 +58,7 @@ body {
 
 .data-list li {
     list-style: none;
-    margin-left: 10px;
+    margin-left: 0;
     position: relative; /* Untuk dropdown */
 }
 
@@ -67,7 +67,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding: 5px 25px; /* Mengurangi padding agar terlihat rapi */
+    padding: 5px 20px; /* Mengurangi padding agar terlihat rapi */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -240,7 +240,7 @@ hr {
 
     .gallery {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
     .data-list {
         gap: 10px; /* Jarak antar item lebih kecil */
@@ -257,7 +257,7 @@ hr {
     .data-list li {
         margin: 0; /* Reset margin default */
         padding: 5px 0; /* Tambahkan jarak vertikal */
-        margin-left: 5px;
+        margin-left: 0;
     }
 
 }
