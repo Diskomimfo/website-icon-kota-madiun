@@ -242,13 +242,13 @@ hr {
         gap: 10px;
     }
     .data-list {
-        gap: 5px; /* Jarak antar item lebih kecil */
+        gap: 50px; /* Jarak antar item lebih kecil */
         
     }
 
     .data-list a {
         font-size: 14px; /* Ukuran font lebih kecil */
-        padding: 5px 15px; /* Kurangi padding internal */
+        padding: 5px 10px; /* Kurangi padding internal */
     }
     .data-list li {
         margin: 0; /* Reset margin default */
