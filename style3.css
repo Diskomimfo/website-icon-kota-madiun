@@ -244,12 +244,13 @@ hr {
     .data-list {
         gap: 20px; /* Jarak antar item lebih kecil */
         align-items: flex-start; /* Rata kiri */
-        padding-left: 20px
+        padding-left: 20px;
     }
 
     .data-list a {
         font-size: 14px; /* Ukuran font lebih kecil */
         padding: 5px 10px; /* Kurangi padding internal */
+     
     }
     .data-list li {
         margin: 0; /* Reset margin default */
