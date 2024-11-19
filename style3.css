@@ -242,15 +242,14 @@ hr {
         gap: 10px;
     }
     .data-list {
-        gap: 30px; /* Jarak antar item lebih kecil */
+        gap: 20px; /* Jarak antar item lebih kecil */
         align-items: flex-start; /* Rata kiri */
-        background-color: lightblue; /* Untuk testing */
         padding-left: 20px
     }
 
     .data-list a {
         font-size: 14px; /* Ukuran font lebih kecil */
-        padding: 5px 15px; /* Kurangi padding internal */
+        padding: 5px 10px; /* Kurangi padding internal */
     }
     .data-list li {
         margin: 0; /* Reset margin default */
