@@ -760,8 +760,10 @@ button[type="submit"]:hover {
         margin-left: 5px;
     }
   .card-item {
-    width: calc(80% - 30px); /* Card memenuhi layar di perangkat kecil */
+    width: calc(80% - 20px); /* Card memenuhi layar di perangkat kecil */
     margin: 10px auto;
+    padding-left:50px;
+    padiing-right:50px;
   }
   .bg-card {
     padding-left: 15px; /* Kurangi padding di layar kecil */
