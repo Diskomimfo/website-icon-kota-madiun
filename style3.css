@@ -242,7 +242,7 @@ hr {
         gap: 10px;
     }
     .data-list {
-        gap: 10px; /* Jarak antar item lebih kecil */
+        gap: 5px; /* Jarak antar item lebih kecil */
         
     }
 
