@@ -295,6 +295,7 @@ body {
   justify-content: center;
   text-align: center;
   animation: fadeIn 0.5s;
+  z-index: 999;
 }
 
 
