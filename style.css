@@ -217,7 +217,7 @@ body {
 /* Set card item */
 .card-item {
   margin: 30px 30px;
-  width:calc( 50% -25px) ; /* Ukuran card agar 2 sebaris */
+  width:calc( 50% -20px) ; /* Ukuran card agar 2 sebaris */
   border: none;
   display: inline-block;
   background-color: rgba(9, 9, 60, 0.315);
@@ -769,8 +769,13 @@ button[type="submit"]:hover {
     width: 95%; /* Sesuaikan ukuran modal */
   }
 
+  
   .gambar-card img {
-    height: auto; /* Agar gambar tidak terpotong */
+     width: 100%;
+     height: auto; /* Sesuaikan tinggi gambar secara proporsional */
+     object-fit: cover; /* Pastikan gambar tetap memenuhi ruang tanpa distorsi */
+     object-position: center;
+
   }
   
   
