@@ -242,6 +242,13 @@ hr {
         flex-direction: column;
         gap: 5px;
     }
+    .gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    }
     .data-list {
         gap: 10px; /* Jarak antar item lebih kecil */
         align-items: flex-start; /* Rata kiri */
