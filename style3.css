@@ -259,6 +259,9 @@ hr {
         padding: 5px 0; /* Tambahkan jarak vertikal */
         margin-left: 0;
     }
+    img {
+        max-width: 80%; /* Kurangi ukuran gambar menjadi 80% dari lebar kontainer */
+    }
 
 }
 
