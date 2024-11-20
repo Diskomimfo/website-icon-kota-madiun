@@ -804,6 +804,7 @@ button[type="submit"]:hover {
     padding-top: 100px; /* Tambahkan ruang ekstra untuk navigasi */
   }
   .social-media {
+    position:fixed;
     z-index:1000;
   }
 }
