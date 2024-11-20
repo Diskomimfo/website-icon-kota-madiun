@@ -758,24 +758,41 @@ button[type="submit"]:hover {
         padding: 5px 0; /* Tambahkan jarak vertikal */
         margin-left: 5px;
     }
-   .bg-card {
-    padding: 10px;
+   /* Background card container */
+  .bg-card {
+    padding: 10px; /* Kurangi padding */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Elemen tetap di tengah */
+    gap: 20px; /* Beri jarak antar-card */
   }
 
   /* Card item */
   .card-item {
-    width: 95%; /* Hampir memenuhi layar kecil */
-    margin: 10px auto;
+    width: 100%; /* Card memenuhi layar sepenuhnya */
+    margin: 10px 0; /* Jarak antar-card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow yang lebih ringan */
   }
 
   /* Gambar pada card */
   .gambar-card {
-    height: 250px; /* Tinggi gambar lebih kecil pada perangkat sangat kecil */
+    height: 250px; /* Tinggi gambar lebih kecil */
   }
 
   .gambar-card img {
-    object-fit: cover;
+    object-fit: cover; /* Gambar tetap rapi tanpa distorsi */
+    object-position: center; /* Gambar berada di tengah */
   }
+
+  /* Deskripsi pada card */
+  .des-card h2 {
+    font-size: 1.2rem; /* Ukuran teks lebih kecil */
+  }
+
+  .des-card p {
+    font-size: 0.8rem; /* Ukuran deskripsi lebih kecil */
+  }
+  
   
 }
 
