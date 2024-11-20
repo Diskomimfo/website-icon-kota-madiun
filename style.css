@@ -759,25 +759,24 @@ button[type="submit"]:hover {
         padding: 5px 0; /* Tambahkan jarak vertikal */
         margin-left: 5px;
     }
+   .bg-card {
+    padding: 10px;
+  }
+
+  /* Card item */
   .card-item {
-    width: calc(80% - 20px); /* Card memenuhi layar di perangkat kecil */
+    width: 95%; /* Hampir memenuhi layar kecil */
     margin: 10px auto;
-    padding-left:50px;
-   
-  }
-  .modal-content {
-    width: 95%; /* Sesuaikan ukuran modal */
   }
 
-  
+  /* Gambar pada card */
+  .gambar-card {
+    height: 250px; /* Tinggi gambar lebih kecil pada perangkat sangat kecil */
+  }
+
   .gambar-card img {
-     width: 100%;
-     height: auto; /* Sesuaikan tinggi gambar secara proporsional */
-     object-fit: cover; /* Pastikan gambar tetap memenuhi ruang tanpa distorsi */
-     object-position: center;
-
+    object-fit: cover;
   }
-  
   
 }
 
