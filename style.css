@@ -288,7 +288,7 @@ section::after {
 .modal {
   display: none; 
   position: fixed; 
-  z-index: 1; 
+  padding-top: 100px; /* Ruang untuk navigasi fixed */
   left: 0; 
   top: 0; 
   width: 100%; 
@@ -310,8 +310,8 @@ section::after {
   border-radius: 12px; /* Sudut melengkung lebih besar */
   max-width: 650px; /* Lebar maksimum */
   width: 90%; /* Lebar responsif */
+  top: calc(50% + 30px); /* Tambahkan offset 30px ke posisi tengah */
   position: auto;
-  z-index: 1; /* Pastikan di atas overlay */
   overflow-y: auto; /* Scroll jika konten terlalu besar */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk tampilan 3D */
   animation: fadeIn 0.3s ease; /* Animasi fade-in */
