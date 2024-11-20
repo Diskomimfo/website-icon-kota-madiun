@@ -803,6 +803,8 @@ button[type="submit"]:hover {
   .modal {
     padding-top: 100px; /* Tambahkan ruang ekstra untuk navigasi */
   }
-  
+  .social-media {
+    z-index:1000;
+  }
 }
 
