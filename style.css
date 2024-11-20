@@ -210,7 +210,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left:70px;
   z-index: 1;
 }
 
