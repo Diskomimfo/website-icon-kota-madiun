@@ -16,7 +16,7 @@
   background-size: cover; /* Agar gambar menutupi seluruh area */
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1000;
+  z-index: 999;
 }
 
 /* Kotak navigasi dengan background terpisah */
@@ -288,7 +288,7 @@ section::after {
 .modal {
   display: none; 
   position: fixed; 
-  padding-top: 100px; /* Ruang untuk navigasi fixed */
+  padding-top: 150px; /* Ruang untuk navigasi fixed */
   left: 0; 
   top: 0; 
   width: 100%; 
@@ -310,7 +310,7 @@ section::after {
   border-radius: 12px; /* Sudut melengkung lebih besar */
   max-width: 650px; /* Lebar maksimum */
   width: 90%; /* Lebar responsif */
-  top: calc(50% + 50px); /* Tambahkan offset 30px ke posisi tengah */
+  top: calc(50% + 70px); /* Tambahkan offset 30px ke posisi tengah */
   position: auto;
   overflow-y: auto; /* Scroll jika konten terlalu besar */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk tampilan 3D */
@@ -793,13 +793,13 @@ button[type="submit"]:hover {
     font-size: 0.8rem; /* Ukuran deskripsi lebih kecil */
   }
   .modal-content {
-    top: calc(50% + 50px); /* Tambahkan jarak lebih besar dari navigasi */
+    top: calc(50% + 100px); /* Tambahkan jarak lebih besar dari navigasi */
     width: 95%; /* Modal lebih lebar untuk layar kecil */
     max-width: 95%; /* Hindari modal terlalu besar di layar kecil */
   }
 
   .modal {
-    padding-top: 120px; /* Tambahkan ruang ekstra untuk navigasi */
+    padding-top: 170px; /* Tambahkan ruang ekstra untuk navigasi */
   }
   
 }
