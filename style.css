@@ -797,7 +797,7 @@ button[type="submit"]:hover {
     top: calc(50% + 50px); /* Tambahkan jarak lebih besar dari navigasi */
     width: 95%; /* Modal lebih lebar untuk layar kecil */
     max-width: 95%; /* Hindari modal terlalu besar di layar kecil */
-    z-index:1999;
+    z-index:2000;
   }
 
   .modal {
