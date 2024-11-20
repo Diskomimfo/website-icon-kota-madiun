@@ -260,7 +260,7 @@ hr {
         margin-left: 0;
     }
     img {
-        max-width: 50%; /* Kurangi ukuran gambar menjadi 80% dari lebar kontainer */
+        max-width: 70%; /* Kurangi ukuran gambar menjadi 80% dari lebar kontainer */
     }
 
 }
