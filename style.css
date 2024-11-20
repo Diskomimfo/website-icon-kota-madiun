@@ -765,10 +765,6 @@ button[type="submit"]:hover {
     padding-left:50px;
    
   }
-  .bg-card {
-    padding-left: 15px; /* Kurangi padding di layar kecil */
-  }
-
   .modal-content {
     width: 95%; /* Sesuaikan ukuran modal */
   }
